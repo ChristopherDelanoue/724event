@@ -14,8 +14,8 @@ const Slider = () => {
   );
 
   useEffect(() => {
-    if (!byDateDesc || byDateDesc.length === 0) return undefined; // ← Ajouté undefined
-    if (isPaused) return undefined; // ← Ajouté undefined
+    if (!byDateDesc || byDateDesc.length === 0) return undefined;
+    if (isPaused) return undefined;
 
     const timer = setTimeout(() => {
       setIndex(index < byDateDesc.length - 1 ? index + 1 : 0);
